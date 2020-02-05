@@ -1,5 +1,3 @@
-library(reprex)
-
 library(tidyverse)
 
 # Data Source
@@ -29,5 +27,3 @@ dat %>%
   labs(x = NULL, y = "Temperatur [°C]", title = "Zürich-Fluntern, Säntis", colour = "Variable") +
   theme_minimal(base_size = 14) + 
   theme(legend.position = "bottom", legend.direction = "vertical")
-
-reprex(tidyverse_quiet = TRUE)
